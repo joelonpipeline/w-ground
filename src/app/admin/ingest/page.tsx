@@ -12,12 +12,12 @@ import { parseMatchText, saveMatchData, ParseResult } from "@/actions/ingest";
 import { MatchParsed } from "@/types/match";
 
 const SAMPLE_TEXT = `[3월/매치구함]
-1. 팀명 : 아라치FS
+1. 팀명 : 더블유FC
 2. 구장예약여부: O
-3. 구장주소 : 서초구 우면동
+3. 구장주소 : 서초구
 4. 날짜&시간 : 3/16(월) 20:00~22:00
 5. 팀 수준 : 아마2(중)
-6. 연락처: 010-4181-4456`;
+6. 연락처: 010-1234-5678`;
 
 type Step = "input" | "preview" | "done";
 
@@ -100,7 +100,7 @@ export default function AdminIngestPage() {
           </Badge>
           <h1 className="text-3xl font-bold tracking-tight">매치 등록</h1>
           <p className="mt-2 text-muted-foreground">
-            카카오톡 매칭 공고 텍스트를 붙여넣으면 자동으로 파싱됩니다.
+            카카오톡 매칭 공고 텍스트를 붙여넣으면 자동으로 AI가 분류합니다.
           </p>
         </div>
 
